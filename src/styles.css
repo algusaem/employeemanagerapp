@@ -95,3 +95,24 @@ a {
 #loader-wrapper h1{
     text-align: center;
 }
+#brand{
+  text-decoration: none;
+  
+}
+#nav-link{
+  margin-left: 2.5em;
+  cursor: pointer;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid white;
+  text-align: center;
+}
+#nav-link:hover{
+  background-color: rgb(116, 72, 16);
+}
+@media only screen and (max-width: 991px) {
+  #nav-link{
+    margin-left: 0em;
+  }
+}

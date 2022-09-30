@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://employeemanager-algusaem.herokuapp.com'
+  apiBaseUrl: ''
 };
 
 /*
