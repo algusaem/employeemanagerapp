@@ -63,7 +63,9 @@ export class AppComponent implements OnInit{
       this.editEmployee = employee;
 
       // Comprueba si el empleado es Administrador o no.
-      if(this.editEmployee?.id === 1){
+      if(this.editEmployee?.id === 1
+        || this.editEmployee?.id === 2
+        || this.editEmployee?.id === 4){
         button.setAttribute('data-target', '#deleteEmployeeModalAdmin');
       }else{
         button.setAttribute('data-target', '#updateEmployeeModal');
@@ -73,7 +75,9 @@ export class AppComponent implements OnInit{
       this.deleteEmployee = employee;
 
       // Comprueba si el empleado es Administrador o no.
-      if(this.deleteEmployee?.id === 1){
+      if(this.deleteEmployee?.id === 1
+        || this.deleteEmployee?.id === 2
+        || this.deleteEmployee?.id === 4){
         button.setAttribute('data-target', '#deleteEmployeeModalAdmin');
       }else{
         button.setAttribute('data-target', '#deleteEmployeeModal');
