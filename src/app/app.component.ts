@@ -13,19 +13,19 @@ export class AppComponent implements OnInit{
   public employees: Employee[];
   public editEmployee: Employee | null;
   public deleteEmployee: Employee | null;
+  public loader = true;
 
   constructor(private employeeService: EmployeeService) {}
 
   ngOnInit(){
-    let loader = document.getElementById('loader-wrapper');
     this.getEmployees();
-    loader!.style.display = "none";
   }
 
   public getEmployees(): void {
     this.employeeService.getEmployees().subscribe({
       next : data =>{
-        this.employees = data; 
+        this.employees = data;
+        this.loader = false;
       },
       error : error => {
         alert(error);
