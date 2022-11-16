@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  apiBaseUrl: 'https://employeemanager-algusaem.herokuapp.com'
+  apiBaseUrl: 'https://employeemanager-springboot-api-production.up.railway.app'
+  
 };
