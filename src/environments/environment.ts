@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://employeemanager-springboot-api-production.up.railway.app'
+  apiBaseUrl: 'http://localhost:5519'
 };
 
 /*
